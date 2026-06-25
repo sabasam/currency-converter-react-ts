@@ -1,75 +1,95 @@
-# React + TypeScript + Vite
+# Currency Converter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive currency converter built with React and TypeScript. The app allows users to convert between currencies using live exchange rate data and view popular exchange rates from their selected base currency.
 
-Currently, two official plugins are available:
+This project was built as a frontend portfolio project to practise React, TypeScript, API integration, component structure, and responsive UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Convert between major currencies instantly
+* Fetch live exchange rates from an external API
+* View popular exchange rates from the selected base currency
+* Swap source and target currencies
+* Responsive design for desktop and mobile screens
+* Loading and error handling for API requests
+* Clean React component structure
+* TypeScript types for currency and API data
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+* React
+* TypeScript
+* Vite
+* CSS
+* REST API integration
+* Git and GitHub
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```txt
+src
+├── components
+│   ├── CurrencyConverter.tsx
+│   └── PopularRates.tsx
+├── data
+│   └── currencies.ts
+├── services
+│   └── exchangeApi.ts
+├── types
+│   └── currency.ts
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## What I Learned
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project helped me practise building a real-world frontend application using React and TypeScript. I worked with component structure, state management, API integration, error handling, and responsive UI design.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+I also practised organising a React project into reusable folders such as components, services, data, and types, which makes the code easier to read, maintain, and extend.
 
+## How to Run the Project
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
 ```
+
+Go into the project folder:
+
+```bash
+cd currency-converter-react-ts
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+## Future Improvements
+
+* Add unit tests with Vitest or Jest
+* Add end-to-end tests with Cypress
+* Add a currency search/filter feature
+* Add historical exchange rate charts
+* Add favourite currency pairs
+* Improve accessibility and keyboard navigation
+
+## Status
+
+The main version of the app is complete. Future improvements will focus on testing, extra features, and further UI enhancements.
