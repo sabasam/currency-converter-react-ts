@@ -8,8 +8,7 @@ function App() {
         <p className="eyebrow">Live exchange rate tool</p>
         <h1>Currency Converter</h1>
         <p className="hero-text">
-          Convert currencies instantly using live exchange rate data. Built with
-          React, TypeScript, API integration, and responsive UI design.
+          Convert currencies instantly using live exchange rate data.
         </p>
       </section>
 
