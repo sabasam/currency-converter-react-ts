@@ -4,6 +4,10 @@ A clean and responsive currency converter built with React and TypeScript. The a
 
 This project was built as a frontend portfolio project to practise React, TypeScript, API integration, component structure, and responsive UI design.
 
+## Live Demo
+
+[View the live app](https://currency-converter-react-ts.vercel.app)
+
 ## Features
 
 * Convert between major currencies instantly
