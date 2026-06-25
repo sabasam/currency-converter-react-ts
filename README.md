@@ -54,7 +54,7 @@ I also practised organising a React project into reusable folders such as compon
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/sabasam/currency-converter-react-ts.git
 ```
 
 Go into the project folder:
